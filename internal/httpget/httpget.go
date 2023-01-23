@@ -63,7 +63,9 @@ func (s Fetcher) Fetch(url string) (*internal.HTTPResponse, error) {
 		return nil, err
 	}
 
-	req.Header.Set("User-Agent", s.Config.HTTP.UserAgent)
+	if s.Config != nil {
+		req.Header.Set("User-Agent", s.Config.HTTP.UserAgent)
+	}
 
 	resp, err := s.Netclient.Do(req)
 	if err != nil {
