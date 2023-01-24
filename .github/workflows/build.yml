@@ -1,5 +1,7 @@
 on: push
 name: Build ChopChop
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
