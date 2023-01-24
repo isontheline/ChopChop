@@ -1,6 +1,5 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/go,jetbrains
-# Edit at https://www.toptal.com/developers/gitignore?templates=go,jetbrains
+.DS_Store
 
 ### Go ###
 # Binaries for programs and plugins
@@ -128,5 +127,3 @@ fabric.properties
 # CodeStream plugin
 # https://plugins.jetbrains.com/plugin/12206-codestream
 .idea/codestream.xml
-
-# End of https://www.toptal.com/developers/gitignore/api/go,jetbrains
